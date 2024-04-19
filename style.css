@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --bg-dark: #F4F1EA;
+    --bg-light: #F9F7F4;
+    --brown: #382110;
+    --brown-less-opacity: #3821102d;
+    --gray: #333333;
+    --links-green: #00635D;
+    --yellow: #FFD767;
+    --yellow-dark: #E1B367;
+    --green: #409D69;
+    --green-dark: #333E30;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0rem;
+    margin: 0rem;
+    transition: 250ms linear;
+}
+
+a {
+    text-decoration: none;
+    color: var(--links-green);
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p, small {
+    margin: 0rem;
+    padding: 0.25rem;
+}
+
+.body {
+    padding: 0;
+    margin: 1rem 3rem;
+    color: var(--brown);
+}
+
+.button, .select {
+    outline: none;
+    border: none;
+    background-color: var(--green);
+    color: var(--bg-light);
+    padding: 0.5rem 1rem;
+    border-radius: .15rem;
+    cursor: pointer;
+}
+
+#title {
+    font-size: 1.5rem;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-0 {
+    gap: 0rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+/* ---------------------------- NAVIGATION BAR --------------------------------- */
+nav .nav-icons, nav .input {
+    display: none;
+}
+
+.nav-links a {
+    color: inherit;
+    margin-right: 3rem;
+}
+
+.nav-icons i {
+    background-color: var(--brown-less-opacity);
+    width: 32px;
+    height: 32px;
+    border-radius: 3rem;
+}
+
+input.input {
+    padding: .5rem .5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 10rem;
+    color: var(--brown);
+}
+
+.input input::placeholder {
+    color: var(--brown);
+}
+
+.input {
+    border-bottom: 2px solid var(--brown);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.profile {
+    width: 32px;
+    height: auto;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+nav #menu {
+    display: block;
+    cursor: pointer;
+}
+
+#hamburger-menu {
+    margin: 50% auto;
+    position: fixed;
+    top: 20%;
+    width: 20rem;
+    background-color: #ffffff;
+    /* outline: 2px solid var(--brown); */
+    border-radius: .15rem;
+    padding: 1rem 2rem;
+    z-index: 2;
+    filter: drop-shadow(0 0 0.25rem var(--brown));
+}
+
+.hide {
+    display: none;
+}
+
+/* ------------------------------------ MAIN ------------------------------------ */
+#Main {
+    margin: 3rem 0rem;
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+}
+
+/* --------------------------- LEFT SIDEBAR ---------------------------- */
+
+.left {
+    display: none;
+}
+
+section {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--brown-less-opacity);
+}
+
+.left, .right {
+    width: 90%;
+    font-size: small;
+}
+
+.icon-large {
+    width: 1rem;
+}
+
+.set-target input {
+    width: 2.5rem;
+    padding: 0.25rem 0rem;
+    outline: none;
+}
+
+.bookshelves {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.bookshelf {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.bookshelfme {
+    background-color: #aa8871;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* --------------------------- RIGHT SIDEBAR ---------------------------- */
+.right {
+    display: none;
+}
+
+.right .ad {
+    background-color: var(--bg-dark);
+    width: 100%;
+    aspect-ratio: 4/3;
+    height: auto;
+}
+
+.award img {
+    width: 100%;
+    height: auto;
+}
+
+.award .text {
+    background-color: var(--green-dark);
+    color: var(--bg-light);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+button.vote {
+    background-color: var(--yellow);
+    color: var(--brown);
+}
+
+.award-title {
+    font-size: 1.5rem;
+}
+
+.book .cover img {
+    width: 5rem;
+    height: auto;
+}
+
+nav a, a.blog {
+    font-size: large;
+}
+
+.right-links {
+    color: var(--gray);
+}
+
+.right-links:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-media.nav-icons i{
+    width: 50px;
+    height: 50px;
+}
+
+/* --------------------------- Banner ---------------------------- */
+#banner {
+    text-align: center;
+    background-image: url('https://wallpapers.com/images/high/bookshelf-aesthetic-book-desktop-gqpk2sqv7a6zsyjl.jpg'); /* ganti nama_file_gambar.png dengan nama file gambar Anda */
+    background-size: auto; /* Atau sesuaikan dengan kebutuhan Anda */
+    background-position: center top; /* Memastikan gambar terletak di tengah elemen */
+    color: var(--yellow); /* Warna teks jika diperlukan */
+    padding: 0rem;
+    margin: 0;
+    height: 200px;
+
+
+}
+
+#banner * {
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------------------- TIMELINE ---------------------------- */
+
+.timeline {
+    padding: 5rem;
+    background-color: var(--bg-light);
+}
+
+.book-card {
+    padding: 1rem;
+    outline: 1px solid var(--brown-less-opacity);
+}
+
+.book-card img.book-cover {
+    width: 7rem;
+    height: 100%;
+}
+
+.update-block {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: .15rem;
+}
+
+.book-card {
+    background-color: #ffffff;
+}
+
+.comment input {
+    width: 100%;
+    border-bottom: 1px solid var(--brown);
+}
+
+.progressbar .outerbar {
+    width: 10rem;
+    height: 1rem;
+    background-color: var(--brown-less-opacity);
+}
+
+.progressbar .innerbar {
+    width: 3rem;
+    height: 1rem;
+    background-color: var(--green);
+}
+
+/* --------------------------- Footer ---------------------------- */
+#footer {
+    font-size: small;
+    background-color: var(--bg-dark);
+    padding: 2rem 1rem;
+}
+
+#footer {
+    display: flex;
+}
+
+.me {
+    margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 992px) {
+
+    .left {
+        display: flex;
+    }
+
+    #Main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav .nav-icons, nav .input {
+        display: flex;
+    }
+
+    nav #menu {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+    }
+
+    #Main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #footer {
+        display: none;
+    }
+}
